@@ -21,6 +21,12 @@ This is the backend for the Census Application, built with Express.js and MySQL.
 
 This guide provides `curl` commands to verify that the Census Application backend is working correctly.
 
+**Using Postman or Browser:**
+You can also test the API by opening `https://noroff-exam-backend.onrender.com/` in your browser.
+1. It will prompt you for a username and password.
+2. Enter `admin` / `P4ssword`.
+3. You should see a welcome message: `{"message":"Census API is running"}`.
+
 > [!IMPORTANT]
 > **Prerequisites:**
 > 1. Ensure MySQL database is running and reachable.
