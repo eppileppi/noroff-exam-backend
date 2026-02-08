@@ -4,6 +4,7 @@ const authenticate = async (req, res, next) => {
     const authHeader = req.headers.authorization;
 
     if (!authHeader) {
+        res.setHeader('WWW-Authenticate', 'Basic realm="Census App"');
         return res.status(401).json({ error: 'Authorization header missing' });
     }
 
