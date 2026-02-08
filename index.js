@@ -19,6 +19,11 @@ app.use(authenticate);
 // Routes
 app.use('/participants', participantsRoutes);
 
+// Root Handler for better UX
+app.get('/', (req, res) => {
+    res.json({ message: 'Census API is running', endpoints: { participants: '/participants' } });
+});
+
 // 404 Handler
 app.use((req, res) => {
     res.status(404).json({ error: 'Not found' });
