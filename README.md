@@ -1,7 +1,7 @@
 # Census Application Backend
 
 ## Deployed Application URL
-[Link to your hosted app on render.com]
+[https://noroff-exam-backend.onrender.com/](https://noroff-exam-backend.onrender.com/)
 
 ## Configuration (.env)
 ```
